@@ -1,0 +1,21 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="KeyFoods" parallel="tests" thread-count="1" >
+
+    <test name="Chrome test" verbose = "1">
+    	<parameter name = "browser" value = "chrome" />
+        <classes>
+        	<class name="tests.endToEnd" ></class>
+            <class name="tests.smoke" ></class>
+        </classes>
+    </test>
+    
+    <test name="Edge test" verbose = "1">
+    	<parameter name = "browser" value = "MicrosoftEdge" />
+        <classes>
+        	<class name="tests.endToEnd" ></class>
+            <class name="tests.smoke" ></class>
+        </classes>
+    </test>
+    
+   
+</suite>
